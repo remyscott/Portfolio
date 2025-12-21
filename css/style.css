@@ -1,0 +1,369 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #ffffff;
+  background-color: #000000;
+  text-align: center;
+}
+
+h1 {
+  font-size: 2.5rem;
+  color: #ff4c4c;
+}
+
+h2 {
+  font-size: 1.8rem;
+  margin-bottom: 0.5em;
+  color: #ff6666;
+}
+
+h3 {
+  font-size: 1.25rem;
+  color: #ffffff;
+}
+
+main {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+section {
+  margin-bottom: 4rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.site-header {
+  position: sticky;
+  top: 0;
+  background: #111111;
+  box-shadow: 0 2px 8px rgba(255, 0, 0, 0.2);
+}
+
+.nav {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  padding: 1rem;
+}
+
+.nav a {
+  text-decoration: none;
+  color: #ff4c4c;
+  transition: color 0.3s ease;
+}
+
+.nav a:hover {
+  color: #ff1a1a;
+}
+
+.hero {
+  height: 100vh;
+  width: 100%;
+  background-image: url('../heroImg.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #ffffff;
+  position: relative;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 1;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.hero h1 {
+  font-size: 4rem;
+  margin-bottom: 1rem;
+  text-shadow: 2px 2px 15px rgba(255, 76, 76, 1);
+}
+
+.hero .subtitle {
+  font-size: 1.5rem;
+  min-height: 2rem;
+  text-shadow: 2px 2px 10px rgba(255, 255, 255, 0.8);
+}
+
+.card {
+  padding: 1.5rem;
+  background: #111111;
+  border-radius: 0.75rem;
+  box-shadow: 0 10px 20px rgba(255, 0, 0, 0.2);
+  margin-bottom: 2rem;
+  color: #ffffff;
+  width: 100%;
+  text-align: center;
+}
+
+.card:hover{
+  background: #303030;
+  border-radius: 3px;
+  box-shadow: 0 0px 50px rgba(255, 255, 255, 0.2);
+  transition: border-radius 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+
+}
+
+.screenshot-container {
+  position: relative;
+  margin-top: 1rem;
+  max-height: 400px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+}
+
+.screenshot {
+  width: 100%;
+  max-height: 400px;
+  object-fit: contain;
+  border-radius: 0.5rem;
+  box-shadow: 0 5px 15px rgba(255, 0, 0, 0.4);
+  display: none;
+}
+
+.screenshot.active {
+  display: block;
+}
+
+.screenshot-buttons {
+  margin-top: 0.5rem;
+  text-align: center;
+}
+
+.screenshot-buttons button {
+  margin: 0 0.25rem;
+  padding: 0.3rem 0.6rem;
+  border: none;
+  border-radius: 4px;
+  background-color: #ff4c4c;
+  color: #ffffff;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.screenshot-buttons button:hover {
+  background-color: #ff1a1a;
+}
+
+.skills-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.skills-list li {
+  list-style: none;
+  background: #330000;
+  padding: 0.5rem 1rem;
+  border-radius: 999px;
+  color: #ff4c4c;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #ffffff;
+  background-color: #000000;
+  text-align: center;
+}
+
+h1 {
+  font-size: 2.5rem;
+  color: #ff4c4c;
+}
+
+h2 {
+  font-size: 1.8rem;
+  margin-bottom: 0.5em;
+  color: #ff6666;
+}
+
+h3 {
+  font-size: 1.25rem;
+  color: #ffffff;
+}
+
+main {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+section {
+  margin-bottom: 16rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.site-header {
+  position: sticky;
+  top: 0;
+  background: #111111;
+  box-shadow: 0 2px 8px rgba(255, 0, 0, 0.2);
+}
+
+.nav {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  padding: 1rem;
+}
+
+.nav a {
+  text-decoration: none;
+  color: #ff4c4c;
+  transition: color 0.3s ease;
+}
+
+.nav a:hover {
+  color: #ff1a1a;
+}
+
+.hero {
+  height: 80vh;
+  width: 100%;
+  background-image: url('../heroImg.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #ffffff;
+  position: relative;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 1;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.hero h1 {
+  font-size: 4rem;
+  margin-bottom: 1rem;
+  text-shadow: 2px 2px 15px rgba(255, 76, 76, 1);
+}
+
+.hero .subtitle {
+  font-size: 1.5rem;
+  min-height: 2rem;
+  text-shadow: 2px 2px 10px rgba(255, 255, 255, 0.8);
+}
+
+
+.screenshot-container {
+  position: relative;
+  margin-top: 1rem;
+  max-height: 400px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+}
+
+.screenshot {
+  width: 100%;
+  max-height: 400px;
+  object-fit: contain;
+  border-radius: 0.5rem;
+  box-shadow: 0 5px 15px rgba(255, 0, 0, 0.4);
+  display: none;
+}
+
+.screenshot.active {
+  display: block;
+}
+
+.screenshot-buttons {
+  margin-top: 0.5rem;
+  text-align: center;
+}
+
+.screenshot-buttons button {
+  margin: 0 0.25rem;
+  padding: 0.3rem 0.6rem;
+  border: none;
+  border-radius: 4px;
+  background-color: #ff4c4c;
+  color: #ffffff;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.screenshot-buttons button:hover {
+  background-color: #ff1a1a;
+}
+
+.skills-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.skills-list li {
+  list-style: none;
+  background: #330000;
+  padding: 0.5rem 1rem;
+  border-radius: 99px;
+  color: #ff4c4c;
+}
+
+.skills-list li:hover{
+  list-style: none;
+  padding: 0.5rem 1rem;
+  border-radius: 3px;
+  color: #ffffff;
+  transition: border-radius 0.3s ease, color 0.3s ease;
+
+}
+
